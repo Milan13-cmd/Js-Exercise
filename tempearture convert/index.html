@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background-color: hsl(0, 14%, 87%);
+        
+        }
+
+        h1{
+            color: hsl(206, 46%, 55%);
+        }
+        form{
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            max-width: 300px;
+            flex-direction: column;
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 5px 0px 4px white;
+            }
+        #textbox{
+            width: 50%;
+            text-align: center;
+            font-size: 2em;
+            border: 2px solid rgb(71, 67, 67);
+            margin-bottom: 20px;
+        }   
+        label{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        button{
+            margin-top: 15px;
+            background-color: rgb(190, 60, 60);
+            color: white;
+            font-size: 1.5em;
+            border: none;
+            padding: 10px 15px;
+            border-radius:  5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: red;
+        }
+
+        #result{
+            font-size: 1.7em;
+             font-weight: bold;
+             color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Temperature conversion</h1>
+        <input type="number" id="textbox" value="0"><br>
+
+        <input type="radio" id="toFahren" name="unit">
+        <label for="toFahren">Celsius ➡️  Fahrenheit</label><br>
+
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toFahren">Fahrenheit ➡️  Celsius</label><br>
+
+        <button type="button" onclick= "convert()">Submit</button>
+
+        <p id="result"></p>
+        <script src="index.js"></script>
+
+
+    </form>
+</body>
+</html>

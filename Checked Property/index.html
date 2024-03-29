@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked Payment</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id ="mycheckbox">
+    <label for="mycheckbox">subscribe</label><br>
+
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label><br>
+    
+    <input type="radio" id="mastercardBtn" name="card">
+    <label for="mastercardBtn">mastercard</label><br>
+    
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">Paypal</label><br>
+
+    <button type="submit" id="mysubmit">submit</button>
+
+    <p id="subresult"></p>
+    <p id="paymentresult"></p>
+    <script src="index.js"></script>
+</body>
+</html>
